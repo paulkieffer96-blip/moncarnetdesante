@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon Carnet de Santé — tout votre suivi médical, au même endroit</title>
+<meta name="theme-color" content="#15803D">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABmJLR0QA/wD/AP+gvaeTAAATrklEQVR4nO3deXgUVboG8PdUd2dPyB4SQmLY91VFICvIKqI4KIgibgzKFbwy48A4CBXkqoiC6+g4I3NdRkfQYVwQlK2BBFQUQVmGNRJIQhZCAqETOt117h8BbkK2XmrpVH2/5/F57OquUx9aL7Wecxh8RNwz6SmSEz05pB4C0I2DdQcQASAUQDsAwQACNC2SuMoGoBJABcAqARQx8F8Atg8mx76Sp3eeAMC1LbEO02rD8UuHJTscpiwOjGBAFoBErWohqqsAsIEz/rmDm9dXiNYKrQpRNQBh4tDIAGaewjmmAxiq5raJz6rlwDbG+Nul3LwWotWh5sZVCUDcktQhksR+D+BWAP5qbJO0SafB8GcLN/21ULSWqbFBRQMQI6amAmw+gAlKbofojg1grzlx6dly8bvzSm5IkQDELUnvK0n8NQAZSrRPjIIXcyYsLuPCO0qdGskagBgxM4TBIXKwuQAscrZNDG0fA+4rEXf8LHfDsgUgNjtjFOfSKtDdHKKMSwATS3vFLcdda5xyNep9AFbfaYo5WCQC7CkAgtftEdKynU4zm1q+cPspORrzKgDR4vAEBuEjAOlyFEOIi84wQbijZNG2Xd42ZPJ0xSgxs4cJsALo520RhLgpBJzfG5yZfNpmzd/rTUMeBSBKTLtRAN8EIN6bjRPiBTOA24OykmCz5m/ztBG3AxCXnTYSwHoA4Z5ulBC5MLDM4MxkP5s1f4sn67sVgKglGTeA8/UAQjzZGCEKSQvKTA6xWfM3uruiywGIEjN7CFzaDPqbn/ggBgwLzkwy26z5W91Zz6UARIvDEy5f8NI5P/FhLD04KynfnQvj1u/bixAECO9zIMmr2ghRA2d/iRNTb3b1560GIAap2RwY4V1VhKjGIoGtiRZTu7ny4xYfhEVnZ2QxLm2EF88LCNHInlKUD4V4wN7Sj5o9AkQvGx7KuPQeaOcnbdOgWEQ829qPmg2AUM0Wg15sI20YB5sXLaa22BelyVOg9kuG93ZKwk+gV5pJ23caMPUsFa1VTX3Z5BHAKQlvgHZ+og+JHM7FzX3Z6Ahw+cLXo8fKhPgoBwMGN9WhpvERgEtPqVISIeoxA1jZ1BcNjgB1b3niO1VKIkRlHDyrTMyx1l8mXPPhSVUrIkRFDKzRtcDVI0CYODTSH+ZC0Lg9RNdYRqm4ffuVT1ePAAHMPAW08xPd43+o/+lqADhn96lfDCGqGxe5NL3jlQ8CUDdQLcBv0q4mQlQjmByYcfUDADicAr3tSQyEPwixbt8XAIBzlqVtQYSoKiUawwcBlwNweXx+QgyDwTQWAIS4Z9JTQG99EsPh4wBAcEq8l9alEKKBIe2eS40QwHl3rSshRAMmi900QBAgUACIITHu7CtwSF21LoQQLTCwPmaARWldiNLG9UrH3TfegpS4jrCYzeDNDAUQwUIQKRhz0DuH5MSZC2XIKy/AukPbsHb/ZpyrVnR2Is1xoCeLEdPyAFyndTFKSO08COLExxAc7NpObeQAXMtWW4MXrKvw128/Qa2k6sSNajokQKfjfM5Ouxsv3r3A5Z2fNBRkCYA4ajb+NeNlhAeEal2OUtoJqJuJXVceS5+G6RmTfGMq8jZuSFI/fP7A63oNQbgAnb0Cndp5EO5Nv13rMnSlR2wK3vzN0xCY7mbACtLdn0icOIf+5lfAyC43Ycb1t2ldhux0FYDxvdMRHBysdRm69WTG/QjxC9K6DFnpKgBTb7hF6xJ0LTo4AhN76+u9SV0FICWuY+s/Il6Z0DND6xJkZda6ADlZzGafO/8/W1OJ7Wf2wlq0BwfP5aG0pgJlNZXwEyyIDAhD34hOyIgfiAlJwxEd4NrkOxwcu4r346tTu7Cn7DBOXCjABbsNIZZAxASEIy4oCqlx/ZARPxD9o7rCJOPFa4/Y62RryxewGDHN1/YZj+1auNqr9eV8EHb8fAFePbAan+ZZXXqQ5G/yw/QuY/Bk/3sR7td8DRsLduPZve/i4Lk8l+roFJqAuX3uwuSULFgE7/++c0hOJDyjn9MgCkA9cgTAwZ1Ytvd9vHHwUzi55Pb67QMj8VbafAyN7dNgud1Ziz98/wY+Ou72PHAAgC5hiXg7bQF6R6R4tH59sdn6mRddV9cAWiurqcDkjU/h1QNrPNr5AeBMdTnu2rwQG059e3VZjdOOqVsWebzzA8Cx86cxfsM8r9rQIwqATC46qjFty2LsKtnvdVt2Zy1m5SzDnrLD4OCYnbscucWNxnV1W43Tjid2vYK1v3o8r7TuUABkIHGOWTuWYV/5MdnarHHa8Wjucrx5cC3W5e+UrV0Ojrm7VuLbkgOytdmWUQBksCZvCzYW7Ja93V8vFCF7zzuyt2t31mLet6/o+S1Pl1EAvFTjtGPZvve1LsNtx88X4L2j67UuQ3MUAC/949jXKLhYqnUZHnl5/8dwcKfWZWiKAuClNSfkm0wn2ByI/pFdEGwOlK3NlpRUn8P2IpcnVdclCoAXKuxV2Fd+VJa2+kR0wg+TVuGb8a/gh0mrZLlf74ptRT+psh1fRQHwwi/lxyBxeZ4jZg9+GJH+YQCASP8wLBr0oCzttmbv2SOqbMdXUQC8kHehSJZ2+kV2Rmr7/g2WZcQPREpogiztt+Rk1RnFt+HLKABeqLA3OfWs2/6r1+RGyxgYpncdK0v7LZHrz9BWUQC8IHn4ukN9icGxmJA8vMnvpnUeDX+Tn9fbaIlDortAxENy3K15pOftMDNTk99F+Ifi1qSmwyGXUIu+eni5iwLgheiAdl6tH+4XgmldRrf4mxndxnu1jdZEeflnaOsoAF7o3i7Jq/Xv6zqu0VHkoqO6wecbY3qhl4K3RHu0S1as7bZAVz3C1Na1XUcEmv1R7bjUYLnAGJYM/i3u7TIGgWbXR52pqq3GvG9fwdtpCxosn9F1HOZ//+ern6d0GolFgx50uQfZ4YqTmLtrJfaebfzMok9kJ5fr0yM6AnjBIpgxLLZvo+UTkoZjZo+Jbu38APDh8a/x+ckc5F0obLB8csoIhFjqjhTXhcZjxdDHXd75AaB7eDJeGzavye+yEga7VaPeUAC8NCZxSKNlicGxbrfj4E785dBn4OCNXlILsQTiNyl13RAf6Tmp2YvmlnQIjmm0LD4oCn0jOrvdlp5QALw0KSUDQeaABsu+zM/F+dqLbrXz98PrcPpiCQDgo+Mbcclpb/D9jK7jEekfhqmdbvaozg+PNe4Jdnfn0RBYM0NlGwRdA3gpzBKMO67LxAfHNlxdll9VjJHr5mBichrC/VoeU9PJnThw7gS+zM+9uuzcpQv4/GQO7uz0/7PX9o5IwavD5jU6rVp/aheOnS9wq32g7vTtnlbuQBkBBUAGT/Sdgo9PbGrQwSS/qhivH/jE4zbfPfpVgwAAwKgONzT4fKHWhrk7V7p9tAGAqZ1v9uhUTW/oFEgGicGxuKfLGFnb3F16CL+UH2/xN/975CuPdv4Akx+e6DPV09J0hQIgkz8OmC77Q6X3651WXatWcmDV4S88aveJvlObvCg2IgqATML9QpE96GFZ2/zkxFZcqLU1+d2neVYU2srcbrNbuyTM7nmHt6XpBgVARnd2GoEpnUbK1t5FRzU+zdvaaDkHx1uH1rrdnkUw47VhT8DPZJGjPF2gAMjs+Rtno5uXr0jU924THde3Fu7BoYpf3W5r4cD7MSCqmwxV6QcFQGZB5gD8LW2B20+Bm3PwXF6DbosS53hl/8dut3NL0jDM6kkz51yLAqCA7uHJWHnT42CQ5yHTIzkv4O9H1mFjwfeYueM5twe16h/ZBa8P+51s9egJPQdQyKTrMlBhr8KCei+xear80nmP20kJTcA/RmQ3elpN6tARQEEPdLsF/91nimbbjw+KwpqRSxHjxotzRkMBUNgfB9yHmT0mqr7dCP9QrB65FB1D4lTfdltCAVBB9uCZjV5rUFK4Xyj+OWKJrHej9IoCoAITE/DasHmY2UP5aUZjAsLxr1HP0e1OF1EAVMLAsPT63+L3/aYpto0OwTH4bPQLqo0qpwcUAJU92e8eLBz4gOztJoXEYe2o59E5rIPsbesZBUADc3pPxvIhj3nUs6spA6K64quxK5Ac0l6W9oyEAqCR+7qOw4cjshFm8W5m+/Edh+Lfo5bRrU4PUQA0lBE/EF+MWe5xx5SZPSbinfQ/yfbahRFRADTWIzwZ68eucOuujYkJeO6GR7H0+lmG79PrLQqAD4gNjMC/Rz2Picmprf423C8EH47IxoPdJ6hQmf5RAHxEoNkfb6ctwMKBD8DEmv7f0iUsEV+OfQmZ8YNUrk6/KAA+hIFhTu/J+CBLRLhfwxnrR3W4EevHrUDXsESNqtMnCoAPGpEwGBvGrUT38OSroXgvc5HXd4xIY/Q6tI9KCU3AujEv4ufyYxge10/rcnSLjgA+LNQSRDu/wigAxNAoAMTQKADE0CgAxNAoAMTQKADE0CgAxNAoAMTQKADE0CgAxNAoAMTQKADE0CgAxNAoAMTQKADE0KhDjIsKneXYXP0zihzn4ISkdTleY2CIMYUhM6APOluMO6AWHQFcUCXV4OOqXJx2nNXFzg/UTbRX4qzEmos7Uegs17oczVAAXHDUUYgabte6DEVwcPx4qeUJufWMAuACQef/mbjWBWhI3/9nZdLd0gGhQqDWZSimj8W4E2lQAFwQwCyYFpKOFHMszJBnRGdfECWE4tagG9DJYtxplOgukIsihRBMDUnTugwiMzoCEEOjABBDowAQQ6NrADfkOYpR4qwE96Ebh5FCKLpY4iGA5gnwBAXARZ/bduOAPV/rMprU0RyNqcGpss05ZiR0CuSCPEexz+78AHDKUYbdl45pXUabRAFwQanzvNYltKrAeVbrEtokCoALEkyRWpfQqhhTO61LaJMoAC5INEfhJn/XJ7FTW7QpDEN8uD5fRhfBLsoK7IuulgScdJTCzh1alwMAEBhDjBCGbpYEugD2EAXADYnmKCSao7Qug8iIToGIoVEAiKFRAIihUQCIoVEAiKFRAIihUQCIoVEAiKFRAIihUQCIoVEAiKFRAIihUQCIoekqANQtXHlOro/Rsa/QVQB0MnK5Tyup0lfXS10FwHapWusSdK+wskTrEmSlqwDsOvqT1iXo3pbj32tdgqx0FYCXt7wHxulKQCmcc6w7tF3rMmSlqwCUVpUj5z+7tS5Dt748tA0Hi/U1m4yuAgAAC9auQHU1XQvIrbKmCks2vaV1GbITAOhqb3FIDty/agG4k24JycXJJcz6NBsnzxVqXYrcagQAFVpXIbf8c0WY8ubjqLXXal1Km1dZU4V7PpyPLce+07oUJVwQAF6pdRVKOFVRjFErHsAPR38Go0dkbuOc44uDVtz89sN63fkB4LwZYLqdJPaSw445Hy9FUmQ85mZNx+CUPgj0CwAEY8+M2BQnl1BaVY6CymJYT/yALw5adXfB24QqFiOm/g1gD2ldCSFq48BmgYPt17oQQrTAwA4LJoZftC6EEG1Ih4Vq7vgJgFPrUgjRwBHhvLirHGD0+JQYjtksHRIAgAFfa10MIWpiQH7Rwp0nLwfAuUHrgghREwfbBFx+F6gYud9z4KS2JRGiHga+FbjyMpwICcAqLQsiREVcgrQFqPc2qATTKtDdIGIMO8rE3EKgXgDKRetpgH2jXU2EqIMzfHDl3xv0B+CQXlC/HEJUVePgpjVXPjQIQJmYYwWwTe2KCFHRZxWi9WoXgEY9wgSGZ9SthxD1SILwUv3PjQJQvHjHZgBWtQoiREUbzi7a1uCthyb7BJsE6TEA1J2K6Az/n2uXNBmAM4tyDzDwV5UviBC18I2lYk7OtUubHRVCCuTZACtQtihClMcAu2QSHm/qu2YDUDY/9wJj/CFQ70HSxnHgpbNPbz/U1HctjgtUsnjH1wx4WZmyCFEeA/KF4MBG5/5XtDowVkm8bT4D9DUgJDEKiYE/VPzkNxeb+0HrI8PN+rFWAp8OHY4fRPSNA9nFYs6mln7j0tCIZWLOEYDdxgC7PKURojhrWa/2zZ76XGFytTWb9eTJoKykAoDd5l1dhCguj1ns4y4++s2F1n7ocgAAwGbN3xucmWQGWLrntRGiqBKY2IjShTvzXfmxWwEAAJs1fyuFgPgomwBpXMninJ9dXcHtAABXQpDsByDNk/UJUUCVBDaxVMzZ4c5KHgUAAGzW/C1BWUlgYJmetkGITEo4pNFnxZxcd1f0OAAAYLPmbwvKTD7MgFsAWLxpixAP/cpN0siyxbkejXDo9QwxZeKOfzJBGAngjLdtEeIODmxmFvtNZU/nHva0DdkGzo9cmt7R5OAfARguV5uENMPJgSVl2LH08ogmHpN35ojVd5piD575HQeWAPCXtW1CANSNX8Xvv9x912uKTJ0StyS9ryThPYAPUKJ9YjwMsHPgJQtsSwvFH20ytquQ1Xeaog8WPcTAsgG0V2w7RPc4sInDNOesaP2P3G0rPnlW3PLRwZLN9hg4+xOAUKW3R3QlV2BYfLmfuiJUmz0uQcyMroX0MMBnA+io1nZJm1MD4DMO6cUyMfcHpTem/vSJYqY5Bs7bAcwEkAV6fkAADvAcztj7Dm5aU3/cHqVpOn9oxPM3tzNfso9lnN8GYAwHIrWsh6iHAycZsIUxvlXifPOVsTrV5lMT6MaJqZ04Q38J6Mc4+gGsPQPCORCOun+CtK6RuKQGQBWA8wAqOVAO4Ahj7DC4dNhslg4VLdzpE8Px/x/sKnrucUnOJgAAAABJRU5ErkJggg==">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --vitale:#16A34A;
+  --vitale2:#4ADE80;
+  --encre:#10312B;
+  --bleu:#2456A6;
+  --alerte:#C74A3C;
+  --ambre:#D98E2B;
+  --fond:#F4F8F2;
+  --papier:#FFFFFF;
+  --texte:#16302A;
+  --texte2:#5C7169;
+  --ligne:#DCE7DA;
+  --ligne2:#C9DAC5;
+  --chip:#EAF3E4;
+  --ok:#15803D;
+  --ombre:0 10px 30px rgba(16,49,43,.18);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --fond:#0D1512;
+    --papier:#152019;
+    --texte:#E6EFE7;
+    --texte2:#93A69A;
+    --ligne:#22322A;
+    --ligne2:#2C4034;
+    --chip:#1C2B21;
+    --encre:#0B1F1A;
+    --ombre:0 10px 30px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --fond:#0D1512;
+  --papier:#152019;
+  --texte:#E6EFE7;
+  --texte2:#93A69A;
+  --ligne:#22322A;
+  --ligne2:#2C4034;
+  --chip:#1C2B21;
+  --encre:#0B1F1A;
+  --ombre:0 10px 30px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  background:var(--fond);
+  color:var(--texte);
+  font-size:15.5px;
+  line-height:1.5;
+  font-weight:500;
+  min-height:100dvh;
+}
+button{font-family:inherit;font-size:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:16px;color:var(--texte)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:2.5px solid var(--vitale);outline-offset:2px;border-radius:6px}
+img{max-width:100%}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- Coque ---------- */
+#app{max-width:640px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column}
+header.topbar{
+  display:flex;align-items:center;gap:10px;
+  padding:14px 18px 10px;
+  position:sticky;top:0;z-index:30;
+  background:color-mix(in srgb, var(--fond) 88%, transparent);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.logo{width:36px;height:36px;flex:none}
+.marque{display:flex;flex-direction:column;line-height:1.1}
+.marque b{font-weight:800;font-size:17px;letter-spacing:-.02em}
+.marque span{font-size:11.5px;color:var(--texte2);font-weight:600}
+.topbar .statut{margin-left:auto;font-size:11px;font-weight:700;color:var(--texte2);
+  border:1px solid var(--ligne);border-radius:20px;padding:4px 10px;display:flex;align-items:center;gap:6px}
+.topbar .statut .pt{width:7px;height:7px;border-radius:50%;background:var(--ambre);flex:none}
+.topbar .statut.on .pt{background:var(--vitale)}
+
+main{flex:1;padding:6px 18px calc(96px + env(safe-area-inset-bottom))}
+.vue{display:none}
+.vue.active{display:block;animation:apparait .18s ease}
+@keyframes apparait{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+}
+
+h1{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:14px 0 4px}
+h2{font-size:17px;font-weight:800;letter-spacing:-.01em;margin:22px 0 10px}
+.sous{color:var(--texte2);font-size:13.5px;margin-bottom:14px}
+
+/* ---------- Carte Vitale (accueil) ---------- */
+.carte-vitale{
+  position:relative;overflow:hidden;
+  border-radius:18px;
+  padding:18px 20px 16px;
+  color:#fff;
+  background:linear-gradient(128deg,#15803D 0%,var(--vitale) 42%,var(--vitale2) 100%);
+  box-shadow:var(--ombre);
+  margin-top:14px;
+}
+.carte-vitale::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 85% -10%,rgba(255,255,255,.32),transparent 55%);
+  pointer-events:none;
+}
+.cv-haut{display:flex;justify-content:space-between;align-items:flex-start}
+.cv-titre{font-size:11.5px;font-weight:800;letter-spacing:.04em;opacity:.92}
+.cv-puce{width:38px;height:28px;border-radius:6px;
+  background:linear-gradient(140deg,#F3D98B,#C9A544);
+  border:1px solid rgba(0,0,0,.15);position:relative;flex:none}
+.cv-puce::before{content:"";position:absolute;inset:5px;border:1px solid rgba(0,0,0,.22);border-radius:3px}
+.cv-nom{font-size:21px;font-weight:800;letter-spacing:-.01em;margin-top:16px;text-shadow:0 1px 2px rgba(0,0,0,.12)}
+.cv-ligne{display:flex;gap:18px;margin-top:10px;font-size:12.5px;font-weight:700}
+.cv-ligne div span{display:block;font-size:10.5px;font-weight:700;opacity:.85}
+.cv-vide{font-size:13px;font-weight:700;margin-top:14px;background:rgba(255,255,255,.22);
+  border:1px solid rgba(255,255,255,.4);border-radius:10px;padding:8px 12px;display:inline-block}
+
+/* ---------- Tuiles résumé ---------- */
+.tuiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.tuile{
+  background:var(--papier);border:1px solid var(--ligne);border-radius:14px;
+  padding:13px 14px;text-align:left;display:block;width:100%;
+}
+.tuile .gros{font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.tuile .leg{font-size:12.5px;color:var(--texte2);font-weight:600;margin-top:2px}
+.tuile.alerte .gros{color:var(--alerte)}
+.tuile.ambre .gros{color:var(--ambre)}
+
+.carte-lien{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  background:var(--papier);border:1px solid var(--ligne);border-radius:14px;
+  padding:13px 14px;margin-top:10px;
+}
+.carte-lien .ic{width:38px;height:38px;border-radius:10px;background:var(--chip);
+  display:flex;align-items:center;justify-content:center;flex:none;color:var(--ok)}
+.carte-lien.bleu .ic{background:color-mix(in srgb, var(--bleu) 14%, var(--papier));color:var(--bleu)}
+.carte-lien b{font-size:14.5px;font-weight:800;display:block}
+.carte-lien small{font-size:12.5px;color:var(--texte2);font-weight:600}
+.carte-lien .chevron{margin-left:auto;color:var(--texte2);flex:none}
+
+/* ---------- Listes médicaments / documents ---------- */
+.outils{display:flex;gap:8px;margin:12px 0}
+.recherche{
+  flex:1;display:flex;align-items:center;gap:8px;
+  background:var(--papier);border:1px solid var(--ligne);border-radius:12px;padding:0 12px;
+}
+.recherche input{flex:1;border:none;background:none;padding:11px 0;outline:none}
+.recherche svg{color:var(--texte2);flex:none}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:800;font-size:14.5px;border-radius:12px;padding:11px 16px;
+  background:var(--encre);color:#fff;min-height:44px;
+}
+:root[data-theme="dark"] .btn, .btn.sombre-inverse{background:var(--vitale);color:#0D1B0D}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .btn{background:var(--vitale);color:#0D1B0D}
+}
+.btn.vert{background:var(--vitale);color:#123312}
+.btn.ligne{background:var(--papier);color:var(--texte);border:1.5px solid var(--ligne2)}
+.btn.danger{background:transparent;color:var(--alerte);border:1.5px solid color-mix(in srgb,var(--alerte) 40%,transparent)}
+.btn.petit{padding:8px 12px;font-size:13px;min-height:38px;border-radius:10px}
+.btn:disabled{opacity:.55;cursor:default}
+.btn.pleine{width:100%}
+
+.fiche{
+  background:var(--papier);border:1px solid var(--ligne);border-radius:14px;
+  padding:12px 13px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start;
+}
+.fiche .vignette{width:52px;height:52px;border-radius:10px;object-fit:cover;background:var(--chip);flex:none;
+  display:flex;align-items:center;justify-content:center;color:var(--ok);overflow:hidden}
+.fiche .vignette img{width:100%;height:100%;object-fit:cover}
+.fiche .corps{flex:1;min-width:0}
+.fiche .nomm{font-weight:800;font-size:15px;letter-spacing:-.01em}
+.fiche .detail{font-size:12.5px;color:var(--texte2);font-weight:600;margin-top:1px}
+.fiche .basrang{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.badge{font-size:11px;font-weight:800;border-radius:20px;padding:3px 9px;background:var(--chip);color:var(--ok)}
+.badge.ambre{background:color-mix(in srgb,var(--ambre) 16%,var(--papier));color:var(--ambre)}
+.badge.rouge{background:color-mix(in srgb,var(--alerte) 14%,var(--papier));color:var(--alerte)}
+.badge.bleu{background:color-mix(in srgb,var(--bleu) 12%,var(--papier));color:var(--bleu)}
+.badge.neutre{color:var(--texte2)}
+.qte{display:flex;align-items:center;gap:2px;margin-left:auto;background:var(--chip);border-radius:10px}
+.qte button{width:34px;height:32px;font-weight:800;font-size:17px;color:var(--ok)}
+.qte b{min-width:26px;text-align:center;font-size:14px}
+.fiche-doc{cursor:pointer;text-align:left;width:100%}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{
+  flex:none;font-size:12.5px;font-weight:800;border-radius:20px;padding:7px 13px;
+  background:var(--papier);border:1.5px solid var(--ligne);color:var(--texte2);
+}
+.chip.actif{background:var(--encre);border-color:var(--encre);color:#fff}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .chip.actif{background:var(--vitale);border-color:var(--vitale);color:#0D1B0D}
+}
+:root[data-theme="dark"] .chip.actif{background:var(--vitale);border-color:var(--vitale);color:#0D1B0D}
+
+.vide-etat{
+  text-align:center;padding:38px 20px;color:var(--texte2);
+  border:1.5px dashed var(--ligne2);border-radius:16px;margin-top:12px;
+}
+.vide-etat b{display:block;color:var(--texte);font-size:15px;margin-bottom:4px}
+.vide-etat .btn{margin-top:14px}
+
+/* ---------- Barre de navigation ---------- */
+nav.dock{
+  position:fixed;bottom:0;left:0;right:0;z-index:40;
+  background:color-mix(in srgb, var(--papier) 94%, transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-top:1px solid var(--ligne);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.dock-int{max-width:640px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 76px 1fr 1fr;align-items:end}
+.onglet{
+  display:flex;flex-direction:column;align-items:center;gap:3px;
+  padding:9px 4px 10px;font-size:10.5px;font-weight:800;color:var(--texte2);
+}
+.onglet.actif{color:var(--vitale)}
+.onglet svg{width:23px;height:23px}
+.scan-central{display:flex;justify-content:center;transform:translateY(-16px)}
+.scan-btn{
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,#15803D,var(--vitale));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 20px rgba(95,168,50,.45);
+  border:4px solid var(--fond);
+}
+.scan-btn svg{width:26px;height:26px}
+
+/* ---------- Formulaires ---------- */
+.champ{margin-bottom:13px}
+.champ label{display:block;font-size:12.5px;font-weight:800;color:var(--texte2);margin-bottom:5px}
+.champ input,.champ select,.champ textarea{
+  width:100%;background:var(--fond);border:1.5px solid var(--ligne2);
+  border-radius:11px;padding:11px 12px;outline:none;
+}
+.champ input:focus,.champ select:focus,.champ textarea:focus{border-color:var(--vitale)}
+.champ textarea{min-height:74px;resize:vertical}
+.grille-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* ---------- Feuilles modales ---------- */
+.voile{
+  position:fixed;inset:0;background:rgba(8,20,16,.55);z-index:50;
+  display:none;align-items:flex-end;justify-content:center;
+}
+.voile.ouvert{display:flex}
+.feuille{
+  background:var(--papier);width:100%;max-width:640px;
+  border-radius:22px 22px 0 0;padding:10px 20px calc(20px + env(safe-area-inset-bottom));
+  max-height:92dvh;overflow-y:auto;
+  animation:monte .22s ease;
+}
+@keyframes monte{from{transform:translateY(40px);opacity:.5}to{transform:none;opacity:1}}
+.poignee{width:42px;height:4.5px;border-radius:3px;background:var(--ligne2);margin:4px auto 14px}
+.feuille h3{font-size:18px;font-weight:800;letter-spacing:-.01em;margin-bottom:2px}
+.feuille .ss{font-size:13px;color:var(--texte2);font-weight:600;margin-bottom:16px}
+.rang-actions{display:flex;gap:10px;margin-top:6px}
+.rang-actions .btn{flex:1}
+
+.choix-scan{display:grid;gap:10px;margin-top:6px}
+.choix-scan button{
+  display:flex;align-items:center;gap:14px;text-align:left;
+  border:1.5px solid var(--ligne2);border-radius:14px;padding:14px;background:var(--fond);
+}
+.choix-scan .ic{width:44px;height:44px;border-radius:12px;background:var(--chip);color:var(--ok);
+  display:flex;align-items:center;justify-content:center;flex:none}
+.choix-scan b{display:block;font-size:15px;font-weight:800}
+.choix-scan small{font-size:12.5px;color:var(--texte2);font-weight:600}
+
+.analyse{display:flex;flex-direction:column;align-items:center;gap:14px;padding:26px 10px;text-align:center}
+.anneau{width:52px;height:52px;border-radius:50%;border:4px solid var(--chip);border-top-color:var(--vitale);animation:tourne .9s linear infinite}
+@keyframes tourne{to{transform:rotate(360deg)}}
+.analyse b{font-size:15.5px}
+.analyse small{color:var(--texte2);font-weight:600}
+.apercu-scan{width:110px;height:110px;border-radius:14px;object-fit:cover;border:1.5px solid var(--ligne)}
+
+.visio{position:fixed;inset:0;background:rgba(5,12,9,.93);z-index:60;display:none;flex-direction:column}
+.visio.ouvert{display:flex}
+.visio-haut{display:flex;align-items:center;gap:10px;padding:14px 16px;color:#fff}
+.visio-haut b{font-size:15px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.visio-haut button{color:#fff;padding:8px}
+.visio-corps{flex:1;display:flex;align-items:center;justify-content:center;padding:0 12px 24px;overflow:auto}
+.visio-corps img{max-height:100%;border-radius:10px}
+.visio-pdf{color:#fff;text-align:center}
+.visio-pdf a{color:var(--vitale2);font-weight:800}
+
+.toast{
+  position:fixed;left:50%;transform:translateX(-50%);
+  bottom:calc(104px + env(safe-area-inset-bottom));
+  background:var(--encre);color:#fff;font-weight:700;font-size:13.5px;
+  border-radius:12px;padding:11px 18px;z-index:70;box-shadow:var(--ombre);
+  opacity:0;pointer-events:none;transition:opacity .2s ease;max-width:88%;text-align:center;
+}
+.toast.visible{opacity:1}
+
+/* ---------- Ameli ---------- */
+.fc-bloc{background:var(--papier);border:1px solid var(--ligne);border-radius:16px;padding:18px;margin-top:14px}
+.fc-btn{
+  display:flex;align-items:center;gap:12px;width:100%;
+  background:#123A78;color:#fff;border-radius:12px;padding:13px 15px;
+  font-weight:800;font-size:14.5px;opacity:.92;
+}
+.fc-btn .fc-m{width:30px;height:30px;border-radius:7px;background:#fff;flex:none;
+  display:flex;align-items:center;justify-content:center}
+.fc-note{font-size:12px;color:var(--texte2);font-weight:600;margin-top:10px;text-align:center}
+.liste-plus{margin-top:8px}
+.liste-plus li{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--ligne);list-style:none}
+.liste-plus li:last-child{border-bottom:none}
+.liste-plus .pt2{width:26px;height:26px;border-radius:8px;background:color-mix(in srgb,var(--bleu) 12%,var(--papier));
+  color:var(--bleu);display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
+.liste-plus b{font-size:14px;display:block}
+.liste-plus small{font-size:12.5px;color:var(--texte2);font-weight:600}
+.demo-tag{font-size:10.5px;font-weight:800;color:var(--ambre);border:1.5px solid color-mix(in srgb,var(--ambre) 45%,transparent);
+  border-radius:6px;padding:2px 7px;letter-spacing:.03em}
+.remb{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--ligne);opacity:.75}
+.remb:last-child{border-bottom:none}
+.remb b{font-size:13.5px;display:block}
+.remb small{font-size:12px;color:var(--texte2);font-weight:600}
+.remb .mont{font-weight:800;font-size:14px;color:var(--bleu);white-space:nowrap}
+
+.info-ligne{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--ligne)}
+.info-ligne:last-child{border-bottom:none}
+.info-ligne span{font-size:12.5px;font-weight:700;color:var(--texte2);flex:none}
+.info-ligne b{font-size:14px;font-weight:700;text-align:right;word-break:break-word}
+.bloc{background:var(--papier);border:1px solid var(--ligne);border-radius:16px;padding:6px 16px;margin-top:12px}
+.bloc.pad{padding:16px}
+.note-securite{font-size:12px;color:var(--texte2);font-weight:600;margin-top:14px;line-height:1.55}
+</style>
+</head>
+<body>
+<div id="app">
+
+<header class="topbar">
+  <svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
+    <defs><clipPath id="livreLogo"><rect x="136" y="104" width="240" height="304" rx="28"/></clipPath></defs>
+    <rect width="512" height="512" rx="115" fill="#15803D"/>
+    <rect x="136" y="104" width="240" height="304" rx="28" fill="#FFFFFF"/>
+    <rect x="136" y="104" width="44" height="304" fill="#DCFCE7" clip-path="url(#livreLogo)"/>
+    <path d="M278,252 C240,222 212,196 212,166 C212,142 230,128 250,128 C262,128 272,134 278,144 C284,134 294,128 306,128 C326,128 344,142 344,166 C344,196 316,222 278,252 Z" fill="#16A34A"/>
+    <polyline points="234,182 258,182 268,160 286,204 296,182 322,182" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="196" y="296" width="150" height="16" rx="8" fill="#86EFAC"/>
+    <rect x="196" y="324" width="110" height="16" rx="8" fill="#86EFAC"/>
+  </svg>
+  <div class="marque"><b>Mon Carnet de Santé</b><span>tout votre suivi médical, au même endroit</span></div>
+  <div class="statut" id="statutSync"><span class="pt"></span><span id="statutTxt">Local</span></div>
+</header>
+
+<main>
+
+<!-- ======================= ACCUEIL ======================= -->
+<section class="vue active" id="vue-accueil">
+  <div class="carte-vitale" id="carteVitale" role="button" tabindex="0" aria-label="Ouvrir mon profil santé">
+    <div class="cv-haut">
+      <div class="cv-titre">MON CARNET DE SANTÉ</div>
+      <div class="cv-puce" aria-hidden="true"></div>
+    </div>
+    <div id="cvContenu"></div>
+  </div>
+
+  <div class="tuiles" id="tuiles"></div>
+
+  <h2>Accès rapide</h2>
+  <button class="carte-lien" data-nav="pharmacie">
+    <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M8 8V6a4 4 0 0 1 8 0v2M12 11.5v5M9.5 14h5"/></svg></span>
+    <span><b>Ma pharmacie</b><small id="rapidePharma">Aucun médicament enregistré</small></span>
+    <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+  </button>
+  <button class="carte-lien" data-nav="documents">
+    <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+    <span><b>Mes documents médicaux</b><small id="rapideDocs">Radios, vaccins, ordonnances, opérations</small></span>
+    <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+  </button>
+  <button class="carte-lien bleu" data-nav="ameli">
+    <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5V12c0 4.8 3.4 8 8 9 4.6-1 8-4.2 8-9V6.5z"/><path d="M9.5 12.2 11.4 14l3.4-3.6"/></svg></span>
+    <span><b>Assurance Maladie</b><small>Connexion Ameli — bientôt disponible</small></span>
+    <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+  </button>
+
+  <div id="alertesAccueil"></div>
+</section>
+
+<!-- ======================= PHARMACIE ======================= -->
+<section class="vue" id="vue-pharmacie">
+  <h1>Ma pharmacie</h1>
+  <p class="sous">Le stock de médicaments à la maison, avec suivi des dates de péremption.</p>
+  <div class="outils">
+    <div class="recherche">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+      <input type="search" id="rechMed" placeholder="Rechercher un médicament" aria-label="Rechercher un médicament">
+    </div>
+    <button class="btn petit" id="btnAjoutMed">Ajouter</button>
+  </div>
+  <div class="chips" id="filtresMed"></div>
+  <div id="listeMeds"></div>
+</section>
+
+<!-- ======================= DOCUMENTS ======================= -->
+<section class="vue" id="vue-documents">
+  <h1>Mes documents</h1>
+  <p class="sous">Radios, vaccins, opérations, ordonnances, analyses — classés et retrouvables.</p>
+  <div class="outils">
+    <div class="recherche">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+      <input type="search" id="rechDoc" placeholder="Rechercher un document" aria-label="Rechercher un document">
+    </div>
+    <button class="btn petit" id="btnAjoutDoc">Scanner</button>
+  </div>
+  <div class="chips" id="filtresDoc"></div>
+  <div id="listeDocs"></div>
+</section>
+
+<!-- ======================= AMELI ======================= -->
+<section class="vue" id="vue-ameli">
+  <h1>Assurance Maladie</h1>
+  <p class="sous">La connexion à votre compte Ameli arrive dans une prochaine version.</p>
+
+  <div class="fc-bloc">
+    <button class="fc-btn" id="btnFC" aria-describedby="fcNote">
+      <span class="fc-m"><svg width="18" height="18" viewBox="0 0 24 24" fill="#123A78"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 12c4.4 0 8 2.2 8 5v3H4v-3c0-2.8 3.6-5 8-5Z"/></svg></span>
+      S'identifier avec FranceConnect
+    </button>
+    <p class="fc-note" id="fcNote">Aperçu de l'écran de connexion — la liaison sécurisée avec l'État n'est pas encore active.</p>
+  </div>
+
+  <h2>Ce que la connexion apportera</h2>
+  <div class="bloc"><ul class="liste-plus">
+    <li><span class="pt2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+      <span><b>Remboursements en temps réel</b><small>Vos dépenses de santé et les taux de prise en charge, synchronisés.</small></span></li>
+    <li><span class="pt2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></span>
+      <span><b>Historique de soins et Mon espace santé</b><small>Import automatique de vos actes, vaccins et comptes-rendus.</small></span></li>
+    <li><span class="pt2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 15h4"/></svg></span>
+      <span><b>Droits et attestations</b><small>Carte Vitale, attestation de droits et mutuelle au même endroit.</small></span></li>
+    <li><span class="pt2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5V12c0 4.8 3.4 8 8 9 4.6-1 8-4.2 8-9V6.5z"/></svg></span>
+      <span><b>Rattachement des ordonnances</b><small>Chaque médicament acheté relié à sa prescription et à son remboursement.</small></span></li>
+  </ul></div>
+
+  <h2 style="display:flex;align-items:center;gap:10px">Aperçu des remboursements <span class="demo-tag">DONNÉES FICTIVES</span></h2>
+  <div class="bloc" id="rembDemo"></div>
+</section>
+
+<!-- ======================= PROFIL ======================= -->
+<section class="vue" id="vue-profil">
+  <h1>Mon profil santé</h1>
+  <p class="sous">Les informations utiles en cas d'urgence ou de consultation.</p>
+  <div id="profilContenu"></div>
+</section>
+
+</main>
+
+<!-- ======================= NAVIGATION ======================= -->
+<nav class="dock" aria-label="Navigation principale">
+  <div class="dock-int">
+    <button class="onglet actif" data-nav="accueil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 9-7.5 9 7.5V20a1.5 1.5 0 0 1-1.5 1.5H4.5A1.5 1.5 0 0 1 3 20z"/><path d="M9.5 21.5v-7h5v7"/></svg>Accueil</button>
+    <button class="onglet" data-nav="pharmacie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3.5" y="8.5" width="17" height="12" rx="3"/><path d="M8.5 8.5V6a3.5 3.5 0 0 1 7 0v2.5M12 11.8v5.4M9.3 14.5h5.4"/></svg>Pharmacie</button>
+    <div class="scan-central"><button class="scan-btn" id="btnScan" aria-label="Scanner un médicament ou un document"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8V5.5A2.5 2.5 0 0 1 5.5 3H8M16 3h2.5A2.5 2.5 0 0 1 21 5.5V8M21 16v2.5a2.5 2.5 0 0 1-2.5 2.5H16M8 21H5.5A2.5 2.5 0 0 1 3 18.5V16M3 12h18"/></svg></button></div>
+    <button class="onglet" data-nav="documents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>Documents</button>
+    <button class="onglet" data-nav="profil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5c1.2-3.6 4.1-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg>Profil</button>
+  </div>
+</nav>
+
+<!-- Feuilles modales (contenu injecté) -->
+<div class="voile" id="voile" role="dialog" aria-modal="true">
+  <div class="feuille" id="feuille"></div>
+</div>
+
+<div class="visio" id="visio" role="dialog" aria-modal="true">
+  <div class="visio-haut">
+    <b id="visioTitre"></b>
+    <button id="visioFermer" aria-label="Fermer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="visio-corps" id="visioCorps"></div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<input type="file" id="ficPhotoMed" accept="image/*" capture="environment" hidden>
+<input type="file" id="ficGalerieMed" accept="image/*" hidden>
+<input type="file" id="ficPhotoDoc" accept="image/*" capture="environment" hidden>
+<input type="file" id="ficFichierDoc" accept="image/*,application/pdf" hidden>
+<input type="file" id="ficImport" accept=".json,application/json" hidden>
+
+</div>
+<script>
+'use strict';
+/* =================== Utilitaires =================== */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nouvelId = () => (crypto.randomUUID ? crypto.randomUUID() : 'id' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8));
+const fmtMois = p => { const [a, m] = String(p).split('-'); return m + '/' + a; };
+const fmtDate = d => { try { return new Date(d + 'T12:00:00').toLocaleDateString('fr-FR'); } catch (e) { return d; } };
+
+function toast(msg) {
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('visible');
+  clearTimeout(toast._m);
+  toast._m = setTimeout(() => t.classList.remove('visible'), 2600);
+}
+
+/* =================== État et capacités =================== */
+const etat = { meds: [], docs: [], profil: null };
+const caps = { db: null, uidUser: null, sample: null, images: false, assets: null, downloads: null };
+let filtreMed = 'tous', filtreDoc = 'tous';
+
+const ICO = {
+  gelule: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="9.5" width="17" height="8" rx="4" transform="rotate(-32 12 13)"/><path d="m9.2 9.4 5 8"/></svg>',
+  fichier: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>',
+  pdf: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M8.5 15.5h7"/></svg>',
+  photo: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.6l1.4-2h5l1.4 2h1.6A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/><circle cx="12" cy="12.5" r="3.4"/></svg>',
+  galerie: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9.5" cy="9.5" r="1.7"/><path d="m5 17 4.5-4.5 3 3L16 12l3.5 3.5"/></svg>',
+  crayon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3.5 20.5 7 9 18.5 4.5 20l1.5-4.5z"/></svg>',
+  poubelle: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9.5 7V5h5v2M6.5 7l1 13h9l1-13M10 11v5.5M14 11v5.5"/></svg>'
+};
+
+const CATS = {
+  ordonnance: { nom: 'Ordonnances', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13.5h3.2a1.9 1.9 0 0 1 0 3.8H9v-6M12.5 17.3l3 3M15.5 17.3l-3 3"/></svg>' },
+  radio: { nom: 'Radio & imagerie', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 7v10M8.5 9.5h7M9 12h6M9.5 14.5h5"/></svg>' },
+  vaccin: { nom: 'Vaccins', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m17 4 3 3M18.5 5.5 12 12M13.5 7.5l3 3-6.2 6.2a2.1 2.1 0 0 1-3-3zM5.5 18.5 4 20M7.5 12.5l2 2"/></svg>' },
+  operation: { nom: 'Opérations', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 4.5c-4.5.5-9 5-11.5 8.5L11 16c3.5-2.5 8-7 8.5-11.5zM8 13l-3.5 5 1.5 1.5 5-3.5"/></svg>' },
+  analyse: { nom: 'Analyses', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4M11 3v6l-4.8 8.3A2 2 0 0 0 7.9 20.5h8.2a2 2 0 0 0 1.7-3.2L13 9V3M8.5 15.5h7"/></svg>' },
+  compte_rendu: { nom: 'Comptes-rendus', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 12h6M9 15.5h6"/></svg>' },
+  remboursement: { nom: 'Remboursements', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v20M17 5.5H9.8a3.3 3.3 0 0 0 0 6.6h4.4a3.3 3.3 0 0 1 0 6.6H6.5"/></svg>' },
+  autre: { nom: 'Autres', ic: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M8.5 2.8V6M15.5 2.8V6"/></svg>' }
+};
+
+/* =================== Stockage =================== */
+const LS = {
+  get(k) { try { const v = localStorage.getItem('cv_' + k); return v ? JSON.parse(v) : null; } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem('cv_' + k, JSON.stringify(v)); } catch (e) {} }
+};
+const base = () => 'data/users/' + caps.uidUser;
+const sansId = o => { const c = { ...o }; delete c.id; return c; };
+
+async function ecrireMedDb(m) {
+  if (!caps.db) return;
+  try { await caps.db.doc(base() + '/sante/meds/' + m.id).set(sansId(m)); }
+  catch (e) { toast('Enregistré sur cet appareil seulement'); }
+}
+async function ecrireDocDb(d) {
+  if (!caps.db) return;
+  try { await caps.db.doc(base() + '/sante/docs/' + d.id).set(sansId(d)); }
+  catch (e) { toast('Enregistré sur cet appareil seulement'); }
+}
+
+async function sauvMed(m, immediat = true) {
+  const i = etat.meds.findIndex(x => x.id === m.id);
+  if (i >= 0) etat.meds[i] = m; else etat.meds.unshift(m);
+  LS.set('meds', etat.meds);
+  if (immediat) await ecrireMedDb(m);
+  rendreTout();
+}
+const minuteries = {};
+function sauvMedDiffere(m) {
+  const i = etat.meds.findIndex(x => x.id === m.id);
+  if (i >= 0) etat.meds[i] = m;
+  LS.set('meds', etat.meds);
+  clearTimeout(minuteries[m.id]);
+  minuteries[m.id] = setTimeout(() => ecrireMedDb(m), 800);
+}
+async function supprMed(id) {
+  etat.meds = etat.meds.filter(x => x.id !== id);
+  LS.set('meds', etat.meds);
+  if (caps.db) { try { await caps.db.doc(base() + '/sante/meds/' + id).delete(); } catch (e) {} }
+  rendreTout();
+}
+async function sauvDoc(d) {
+  const i = etat.docs.findIndex(x => x.id === d.id);
+  if (i >= 0) etat.docs[i] = d; else etat.docs.unshift(d);
+  LS.set('docs', etat.docs);
+  await ecrireDocDb(d);
+  rendreTout();
+}
+async function supprDoc(id) {
+  const d = etat.docs.find(x => x.id === id);
+  etat.docs = etat.docs.filter(x => x.id !== id);
+  LS.set('docs', etat.docs);
+  if (caps.db) { try { await caps.db.doc(base() + '/sante/docs/' + id).delete(); } catch (e) {} }
+  if (d && d.assetId && caps.assets) { try { await caps.assets.delete(d.assetId); } catch (e) {} }
+  rendreTout();
+}
+async function sauvProfil(p) {
+  etat.profil = p;
+  LS.set('profil', p);
+  if (caps.db) { try { await caps.db.doc(base() + '/profil').set(p); } catch (e) { toast('Enregistré sur cet appareil seulement'); } }
+  rendreTout();
+}
+
+async function chargerDepuisDb() {
+  try {
+    const [ms, ds, pr] = await Promise.all([
+      caps.db.collection(base() + '/sante/meds').get(),
+      caps.db.collection(base() + '/sante/docs').get(),
+      caps.db.doc(base() + '/profil').get()
+    ]);
+    const meds = ms.docs.map(x => ({ id: x.id, ...x.data() }));
+    const docs = ds.docs.map(x => ({ id: x.id, ...x.data() }));
+    const profil = pr.exists ? pr.data() : null;
+    const vide = !meds.length && !docs.length && !profil;
+    const localPlein = etat.meds.length || etat.docs.length || etat.profil;
+    if (vide && localPlein && !LS.get('migre')) {
+      for (const m of etat.meds) await ecrireMedDb(m);
+      for (const d of etat.docs) await ecrireDocDb(d);
+      if (etat.profil) await caps.db.doc(base() + '/profil').set(etat.profil).catch(() => {});
+      LS.set('migre', true);
+      return;
+    }
+    etat.meds = meds.sort((a, b) => (b.creeLe || 0) - (a.creeLe || 0));
+    etat.docs = docs.sort((a, b) => (b.creeLe || 0) - (a.creeLe || 0));
+    etat.profil = profil;
+    LS.set('meds', etat.meds); LS.set('docs', etat.docs); LS.set('profil', etat.profil);
+  } catch (e) {
+    caps.db = null;
+  }
+}
+
+/* =================== Images =================== */
+function chargerImage(file) {
+  return new Promise((res, rej) => {
+    const url = URL.createObjectURL(file);
+    const im = new Image();
+    im.onload = () => { URL.revokeObjectURL(url); res(im); };
+    im.onerror = () => { URL.revokeObjectURL(url); rej(new Error('image')); };
+    im.src = url;
+  });
+}
+async function reduireImage(file, maxDim, qualite) {
+  const im = await chargerImage(file);
+  const r = Math.min(1, maxDim / Math.max(im.width, im.height));
+  const c = document.createElement('canvas');
+  c.width = Math.max(1, Math.round(im.width * r));
+  c.height = Math.max(1, Math.round(im.height * r));
+  c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+  return c.toDataURL('image/jpeg', qualite);
+}
+async function reduireImageBlob(file, maxDim, qualite) {
+  const im = await chargerImage(file);
+  const r = Math.min(1, maxDim / Math.max(im.width, im.height));
+  const c = document.createElement('canvas');
+  c.width = Math.max(1, Math.round(im.width * r));
+  c.height = Math.max(1, Math.round(im.height * r));
+  c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+  return new Promise(res => c.toBlob(b => res(b), 'image/jpeg', qualite));
+}
+async function imagePourStockageLocal(file) {
+  let dim = 1400, q = 0.75;
+  let d = await reduireImage(file, dim, q);
+  while (d.length > 190000 && (q > 0.45 || dim > 700)) {
+    if (q > 0.45) q -= 0.1; else dim -= 250;
+    d = await reduireImage(file, dim, q);
+  }
+  return d.length <= 200000 ? d : null;
+}
+
+/* =================== Navigation =================== */
+function naviguer(nom) {
+  $$('.vue').forEach(v => v.classList.toggle('active', v.id === 'vue-' + nom));
+  $$('.onglet').forEach(o => o.classList.toggle('actif', o.dataset.nav === nom));
+  window.scrollTo({ top: 0 });
+}
+
+/* =================== Rendu =================== */
+function statutPeremption(p) {
+  if (!p) return null;
+  const [a, m] = String(p).split('-').map(Number);
+  if (!a || !m) return null;
+  const fin = new Date(a, m, 0, 23, 59, 59);
+  const jours = Math.ceil((fin - Date.now()) / 86400000);
+  if (jours < 0) return { cls: 'rouge', txt: 'Périmé depuis ' + fmtMois(p), etat: 'perime' };
+  if (jours <= 60) return { cls: 'ambre', txt: 'Périme bientôt · ' + fmtMois(p), etat: 'bientot' };
+  return { cls: 'neutre', txt: 'Exp. ' + fmtMois(p), etat: 'ok' };
+}
+
+function rendreAccueil() {
+  const p = etat.profil;
+  $('#cvContenu').innerHTML = p && (p.prenom || p.nom)
+    ? `<div class="cv-nom">${esc((p.prenom || '') + ' ' + (p.nom || '')).trim()}</div>
+       <div class="cv-ligne">
+         ${p.naissance ? `<div><span>Né(e) le</span>${esc(fmtDate(p.naissance))}</div>` : ''}
+         ${p.groupeSanguin && p.groupeSanguin !== 'Inconnu' ? `<div><span>Groupe sanguin</span>${esc(p.groupeSanguin)}</div>` : ''}
+         ${p.mutuelle ? `<div><span>Mutuelle</span>${esc(p.mutuelle)}</div>` : ''}
+       </div>`
+    : `<div class="cv-nom">Bienvenue</div><div class="cv-vide">Touchez pour compléter votre profil santé</div>`;
+
+  const perimes = etat.meds.filter(m => statutPeremption(m.peremption)?.etat === 'perime');
+  const bientot = etat.meds.filter(m => statutPeremption(m.peremption)?.etat === 'bientot');
+  const boites = etat.meds.reduce((s, m) => s + (Number(m.quantite) || 0), 0);
+  $('#tuiles').innerHTML = `
+    <button class="tuile" data-nav="pharmacie"><div class="gros num">${etat.meds.length}</div><div class="leg">Médicaments · ${boites} boîte${boites > 1 ? 's' : ''}</div></button>
+    <button class="tuile" data-nav="documents"><div class="gros num">${etat.docs.length}</div><div class="leg">Documents classés</div></button>
+    <button class="tuile ${perimes.length ? 'alerte' : ''}" data-nav="pharmacie" data-filtre="perimes"><div class="gros num">${perimes.length}</div><div class="leg">Périmés</div></button>
+    <button class="tuile ${bientot.length ? 'ambre' : ''}" data-nav="pharmacie" data-filtre="bientot"><div class="gros num">${bientot.length}</div><div class="leg">Périment sous 60 j</div></button>`;
+
+  $('#rapidePharma').textContent = etat.meds.length
+    ? `${etat.meds.length} référence${etat.meds.length > 1 ? 's' : ''} en stock`
+    : 'Aucun médicament enregistré';
+  $('#rapideDocs').textContent = etat.docs.length
+    ? `${etat.docs.length} document${etat.docs.length > 1 ? 's' : ''} enregistré${etat.docs.length > 1 ? 's' : ''}`
+    : 'Radios, vaccins, ordonnances, opérations';
+
+  $('#alertesAccueil').innerHTML = perimes.length ? `
+    <h2>À faire</h2>
+    <button class="carte-lien" data-nav="pharmacie" data-filtre="perimes">
+      <span class="ic" style="background:color-mix(in srgb,var(--alerte) 14%,var(--papier));color:var(--alerte)">${ICO.gelule}</span>
+      <span><b>${perimes.length} médicament${perimes.length > 1 ? 's' : ''} périmé${perimes.length > 1 ? 's' : ''}</b>
+      <small>À rapporter en pharmacie (filière Cyclamed), pas à la poubelle.</small></span>
+    </button>` : '';
+}
+
+function rendreMeds() {
+  const filtres = [['tous', 'Tous'], ['bientot', 'À surveiller'], ['perimes', 'Périmés']];
+  $('#filtresMed').innerHTML = filtres.map(([k, n]) =>
+    `<button class="chip ${filtreMed === k ? 'actif' : ''}" data-fmed="${k}">${n}</button>`).join('');
+
+  const q = ($('#rechMed').value || '').trim().toLowerCase();
+  let liste = etat.meds.filter(m =>
+    !q || [m.nom, m.dci, m.laboratoire, m.forme].some(v => (v || '').toLowerCase().includes(q)));
+  if (filtreMed === 'perimes') liste = liste.filter(m => statutPeremption(m.peremption)?.etat === 'perime');
+  if (filtreMed === 'bientot') liste = liste.filter(m => ['perime', 'bientot'].includes(statutPeremption(m.peremption)?.etat));
+
+  $('#listeMeds').innerHTML = liste.length ? liste.map(m => {
+    const st = statutPeremption(m.peremption);
+    const det = [m.forme, m.dci, m.laboratoire].filter(Boolean).join(' · ');
+    return `<div class="fiche" data-med="${m.id}" role="button" tabindex="0">
+      <div class="vignette">${m.vignette ? `<img src="${m.vignette}" alt="">` : ICO.gelule}</div>
+      <div class="corps">
+        <div class="nomm">${esc(m.nom)}${m.dosage ? ' <span style="font-weight:700;color:var(--texte2)">' + esc(m.dosage) + '</span>' : ''}</div>
+        ${det ? `<div class="detail">${esc(det)}</div>` : ''}
+        <div class="basrang">
+          ${st ? `<span class="badge ${st.cls}">${st.txt}</span>` : '<span class="badge neutre">Sans date</span>'}
+          <div class="qte" aria-label="Quantité en stock">
+            <button data-qte="-1" data-id="${m.id}" aria-label="Retirer une boîte">−</button>
+            <b class="num">${Number(m.quantite) || 0}</b>
+            <button data-qte="1" data-id="${m.id}" aria-label="Ajouter une boîte">+</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('') : `<div class="vide-etat"><b>${q || filtreMed !== 'tous' ? 'Rien ne correspond' : 'Votre pharmacie est vide'}</b>
+    ${q || filtreMed !== 'tous' ? 'Modifiez la recherche ou le filtre.' : 'Prenez une boîte en photo : elle sera reconnue et ajoutée au stock.'}
+    ${!q && filtreMed === 'tous' ? '<br><button class="btn vert" id="videAjoutMed">Scanner une boîte</button>' : ''}</div>`;
+}
+
+function rendreDocs() {
+  const compte = k => etat.docs.filter(d => d.categorie === k).length;
+  $('#filtresDoc').innerHTML = `<button class="chip ${filtreDoc === 'tous' ? 'actif' : ''}" data-fdoc="tous">Tous · ${etat.docs.length}</button>` +
+    Object.entries(CATS).map(([k, c]) => {
+      const n = compte(k);
+      return n || filtreDoc === k ? `<button class="chip ${filtreDoc === k ? 'actif' : ''}" data-fdoc="${k}">${c.nom} · ${n}</button>` : '';
+    }).join('');
+
+  const q = ($('#rechDoc').value || '').trim().toLowerCase();
+  let liste = etat.docs.filter(d =>
+    (filtreDoc === 'tous' || d.categorie === filtreDoc) &&
+    (!q || [d.titre, d.notes, CATS[d.categorie]?.nom].some(v => (v || '').toLowerCase().includes(q))));
+
+  $('#listeDocs').innerHTML = liste.length ? liste.map(d => {
+    const c = CATS[d.categorie] || CATS.autre;
+    return `<div class="fiche fiche-doc" data-doc="${d.id}" role="button" tabindex="0">
+      <div class="vignette">${d.vignette ? `<img src="${d.vignette}" alt="">` : (d.type === 'application/pdf' ? ICO.pdf : c.ic)}</div>
+      <div class="corps">
+        <div class="nomm">${esc(d.titre)}</div>
+        <div class="detail">${d.date ? fmtDate(d.date) : 'Sans date'}${d.notes ? ' · ' + esc(d.notes) : ''}</div>
+        <div class="basrang"><span class="badge bleu">${c.nom}</span>${d.type === 'application/pdf' ? '<span class="badge neutre">PDF</span>' : ''}</div>
+      </div>
+    </div>`;
+  }).join('') : `<div class="vide-etat"><b>${q || filtreDoc !== 'tous' ? 'Rien ne correspond' : 'Aucun document pour le moment'}</b>
+    ${q || filtreDoc !== 'tous' ? 'Modifiez la recherche ou la catégorie.' : 'Photographiez une radio, un carnet de vaccination ou une ordonnance : le document sera classé automatiquement.'}
+    ${!q && filtreDoc === 'tous' ? '<br><button class="btn vert" id="videAjoutDoc">Scanner un document</button>' : ''}</div>`;
+}
+
+function rendreProfil() {
+  const p = etat.profil;
+  const zone = $('#profilContenu');
+  if (!p) {
+    zone.innerHTML = `<div class="vide-etat"><b>Profil non renseigné</b>
+      Nom, groupe sanguin, allergies, médecin traitant : les informations qui comptent en cas d'urgence.
+      <br><button class="btn vert" id="btnCreerProfil">Créer mon profil</button></div>
+      <h2>Scan intelligent</h2><div class="bloc">
+        <p style="margin:0 0 10px;color:var(--texte2);font-size:.92rem;line-height:1.5">Le scan par photo utilise l’API Claude avec votre propre clé, créée sur console.anthropic.com. Elle reste uniquement sur cet appareil et chaque analyse est facturée sur votre compte Anthropic — de l’ordre du centime par photo. Sans clé, tout fonctionne en saisie manuelle, photo comprise.</p>
+        <div class="champ"><label for="cleApi">Clé API Anthropic</label><input id="cleApi" type="password" autocomplete="off" placeholder="sk-ant-…" value="${esc(LS.get('cleApi') || '')}"></div>
+        <button class="btn petit" id="btnCle">${LS.get('cleApi') ? 'Mettre à jour la clé' : 'Enregistrer la clé'}</button>
+      </div>
+      <p class="note-securite" id="noteStockage"></p>`;
+  } else {
+    const l = (t, v) => v ? `<div class="info-ligne"><span>${t}</span><b>${esc(v)}</b></div>` : '';
+    zone.innerHTML = `
+      <h2>Identité</h2><div class="bloc">
+        ${l('Prénom', p.prenom)}${l('Nom', p.nom)}${l('Date de naissance', p.naissance ? fmtDate(p.naissance) : '')}
+        ${l('Sexe', p.sexe)}${l('N° de sécurité sociale', p.nir)}${l('Mutuelle', p.mutuelle)}
+      </div>
+      <h2>Santé</h2><div class="bloc">
+        ${l('Groupe sanguin', p.groupeSanguin)}${l('Taille', p.taille ? p.taille + ' cm' : '')}${l('Poids', p.poids ? p.poids + ' kg' : '')}
+        ${l('Allergies', p.allergies)}${l('Traitements en cours', p.traitements)}${l('Antécédents', p.antecedents)}
+      </div>
+      <h2>Contacts</h2><div class="bloc">
+        ${l('Médecin traitant', p.medecin)}${l('Téléphone du médecin', p.medecinTel)}
+        ${l('Contact d’urgence', p.urgenceNom)}${l('Téléphone d’urgence', p.urgenceTel)}
+      </div>
+
+      <h2>Scan intelligent</h2><div class="bloc">
+        <p style="margin:0 0 10px;color:var(--texte2);font-size:.92rem;line-height:1.5">Le scan par photo utilise l’API Claude avec votre propre clé, créée sur console.anthropic.com. Elle reste uniquement sur cet appareil et chaque analyse est facturée sur votre compte Anthropic — de l’ordre du centime par photo. Sans clé, tout fonctionne en saisie manuelle, photo comprise.</p>
+        <div class="champ"><label for="cleApi">Clé API Anthropic</label><input id="cleApi" type="password" autocomplete="off" placeholder="sk-ant-…" value="${esc(LS.get('cleApi') || '')}"></div>
+        <button class="btn petit" id="btnCle">${LS.get('cleApi') ? 'Mettre à jour la clé' : 'Enregistrer la clé'}</button>
+      </div>
+      <h2>Sur votre téléphone</h2><div class="bloc">
+        <p style="margin:0 0 8px;color:var(--texte2);font-size:.92rem;line-height:1.5">Installez Mon Carnet de Santé sur l’écran d’accueil : il s’ouvrira comme une vraie application, avec son icône.</p>
+        <p style="margin:0 0 6px;font-size:.92rem"><b>iPhone</b> — Safari, bouton Partager, puis « Sur l’écran d’accueil ».</p>
+        <p style="margin:0;font-size:.92rem"><b>Android</b> — Chrome, menu à trois points, puis « Ajouter à l’écran d’accueil ».</p>
+      </div>
+      <div class="rang-actions" style="margin-top:16px">
+        <button class="btn" id="btnEditerProfil">Modifier</button>
+        <button class="btn ligne" id="btnExporter">Exporter</button>
+        <button class="btn ligne" id="btnImporter">Importer</button>
+      </div>
+      <p class="note-securite" id="noteStockage"></p>`;
+  }
+  const n = $('#noteStockage');
+  if (n) n.textContent = 'Vos données restent uniquement dans ce navigateur, sur cet appareil. Rien ne part sur un serveur. Exportez régulièrement une sauvegarde.';
+}
+
+function rendreAmeli() {
+  $('#rembDemo').innerHTML = [
+    ['Consultation médecin généraliste', '12/08/2026 · Secteur 1', '+ 16,50 €'],
+    ['Pharmacie — Doliprane 1000 mg', '12/08/2026 · Taux 65 %', '+ 1,42 €'],
+    ['Analyses biologiques', '28/07/2026 · Taux 60 %', '+ 19,44 €'],
+    ['Radiographie du poignet', '15/07/2026 · Taux 70 %', '+ 23,66 €']
+  ].map(([t, s, m]) => `<div class="remb"><span><b>${t}</b><small>${s}</small></span><span class="mont num">${m}</span></div>`).join('');
+}
+
+function majStatut() {
+  const s = $('#statutSync');
+  s.classList.add('on');
+  $('#statutTxt').textContent = 'Sur cet appareil';
+  s.title = 'Données enregistrées uniquement dans ce navigateur';
+}
+
+function rendreTout() { rendreAccueil(); rendreMeds(); rendreDocs(); rendreProfil(); majStatut(); }
+
+/* =================== Feuilles modales =================== */
+function ouvrirFeuille(html) {
+  $('#feuille').innerHTML = '<div class="poignee"></div>' + html;
+  $('#voile').classList.add('ouvert');
+  document.body.style.overflow = 'hidden';
+}
+function fermerFeuille() {
+  $('#voile').classList.remove('ouvert');
+  $('#feuille').innerHTML = '';
+  document.body.style.overflow = '';
+  if (fluxAbort) { fluxAbort.abort(); fluxAbort = null; }
+}
+$('#voile').addEventListener('click', e => { if (e.target === $('#voile')) fermerFeuille(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { fermerFeuille(); fermerVisio(); }
+});
+
+/* =================== Scanner =================== */
+let fluxAbort = null;
+
+function feuilleScan() {
+  ouvrirFeuille(`
+    <h3>Que voulez-vous scanner ?</h3>
+    <p class="ss">Une photo suffit : l'application lit le contenu et pré-remplit la fiche.</p>
+    <div class="choix-scan">
+      <button id="scanMed"><span class="ic">${ICO.gelule}</span><span><b>Un médicament</b><small>Boîte, tube, flacon — ajouté au stock de la pharmacie</small></span></button>
+      <button id="scanDoc"><span class="ic">${ICO.fichier}</span><span><b>Un document médical</b><small>Radio, vaccin, opération, ordonnance, analyse…</small></span></button>
+    </div>`);
+  $('#scanMed').onclick = () => feuilleSource('med');
+  $('#scanDoc').onclick = () => feuilleSource('doc');
+}
+
+function feuilleSource(type) {
+  const med = type === 'med';
+  ouvrirFeuille(`
+    <h3>${med ? 'Scanner un médicament' : 'Scanner un document'}</h3>
+    <p class="ss">${med ? 'Cadrez la face de la boîte où figurent le nom et le dosage.' : 'Cadrez le document en entier, bien à plat et éclairé.'}</p>
+    <div class="choix-scan">
+      <button id="srcPhoto"><span class="ic">${ICO.photo}</span><span><b>Prendre une photo</b><small>Avec l'appareil photo</small></span></button>
+      <button id="srcFichier"><span class="ic">${ICO.galerie}</span><span><b>Choisir un fichier</b><small>${med ? 'Depuis la galerie' : 'Photo ou PDF depuis l’appareil'}</small></span></button>
+      ${med ? '<button id="srcManuel"><span class="ic">' + ICO.crayon + '</span><span><b>Saisir à la main</b><small>Sans photo</small></span></button>' : ''}
+    </div>`);
+  $('#srcPhoto').onclick = () => $(med ? '#ficPhotoMed' : '#ficPhotoDoc').click();
+  $('#srcFichier').onclick = () => $(med ? '#ficGalerieMed' : '#ficFichierDoc').click();
+  if (med) $('#srcManuel').onclick = () => formMedicament({}, null, null);
+}
+
+function feuilleAnalyse(apercu, titre) {
+  ouvrirFeuille(`
+    <div class="analyse">
+      ${apercu ? `<img class="apercu-scan" src="${apercu}" alt="">` : ''}
+      <div class="anneau" aria-hidden="true"></div>
+      <b>${titre}</b>
+      <small>L’IA lit la photo — cela prend quelques secondes.</small>
+      <button class="btn ligne petit" id="annulerAnalyse">Annuler</button>
+    </div>`);
+  $('#annulerAnalyse').onclick = fermerFeuille;
+}
+
+/* ---- Analyse IA (clé API personnelle) ---- */
+async function analyserImage(prompt, file, signal) {
+  const cle = LS.get('cleApi');
+  const blob = (file.type === 'image/jpeg' && file.size < 1.8 * 1024 * 1024)
+    ? file
+    : (await reduireImageBlob(file, 1600, 0.85).catch(() => null)) || file;
+  const b64 = await new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => res(String(r.result).split(',')[1]);
+    r.onerror = () => rej(new Error('lecture'));
+    r.readAsDataURL(blob);
+  });
+  const rep = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST', signal,
+    headers: {
+      'content-type': 'application/json',
+      'x-api-key': cle,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-5', max_tokens: 600,
+      messages: [{ role: 'user', content: [
+        { type: 'image', source: { type: 'base64', media_type: blob.type || 'image/jpeg', data: b64 } },
+        { type: 'text', text: prompt }
+      ] }]
+    })
+  });
+  if (rep.status === 401 || rep.status === 403) { const e = new Error('cle'); e.code = 'bad_key'; throw e; }
+  if (!rep.ok) throw new Error('API ' + rep.status);
+  const data = await rep.json();
+  const txt = (data.content || []).map(c => c.type === 'text' ? c.text : '').join('');
+  return JSON.parse(txt.replace(/```json|```/g, '').trim());
+}
+function rappelCle() {
+  if (!LS.get('cleApi') && !LS.get('rappelCleVu')) {
+    toast('Astuce : ajoutez votre clé API dans le Profil pour activer le scan automatique');
+    LS.set('rappelCleVu', 1);
+  }
+}
+
+/* ---- Flux médicament ---- */
+async function fluxMedicament(file) {
+  let vignette = null;
+  try { vignette = await reduireImage(file, 240, 0.62); } catch (e) {}
+  if (LS.get('cleApi')) {
+    feuilleAnalyse(vignette, 'Lecture du médicament…');
+    fluxAbort = new AbortController();
+    const prompt = 'Tu analyses la photo d’une boîte ou d’un emballage de médicament vendu en France. ' +
+      'Réponds UNIQUEMENT avec un objet JSON de cette forme exacte : ' +
+      '{"medicament": true ou false, "nom": "nom commercial, ex Doliprane", "dosage": "ex 1000 mg", ' +
+      '"forme": "une valeur parmi comprimé, gélule, sirop, sachet, solution, crème, suppositoire, collyre, spray, injection, autre", ' +
+      '"laboratoire": "nom du laboratoire ou null", "dci": "substance active ou null", ' +
+      '"quantite": nombre d’unités par boîte si visible sinon null, ' +
+      '"peremption": "AAAA-MM si une date EXP est lisible, sinon null"}. ' +
+      'Si l’image n’est pas un médicament, mets medicament à false et les autres champs à null.';
+    try {
+      const r = await analyserImage(prompt, file, fluxAbort.signal);
+      fluxAbort = null;
+      if (r && r.medicament === false) {
+        toast('Médicament non reconnu sur la photo — vérifiez les champs');
+        formMedicament({}, vignette, null);
+      } else {
+        formMedicament(r || {}, vignette, null);
+      }
+    } catch (e) {
+      fluxAbort = null;
+      if (e && (e.code === 'cancelled' || e.name === 'AbortError')) return;
+      toast(e && e.code === 'bad_key' ? 'Clé API refusée — vérifiez-la dans le Profil' : 'Analyse indisponible — saisie manuelle');
+      formMedicament({}, vignette, null);
+    }
+  } else {
+    rappelCle();
+    formMedicament({}, vignette, null);
+  }
+}
+
+const FORMES = ['comprimé', 'gélule', 'sirop', 'sachet', 'solution', 'crème', 'suppositoire', 'collyre', 'spray', 'injection', 'autre'];
+function formMedicament(pre, vignette, idExistant) {
+  const m = idExistant ? etat.meds.find(x => x.id === idExistant) || {} : {};
+  const v = (a, b) => a ?? b ?? '';
+  ouvrirFeuille(`
+    <h3>${idExistant ? 'Modifier le médicament' : 'Nouveau médicament'}</h3>
+    <p class="ss">${idExistant ? '' : 'Vérifiez les champs pré-remplis avant d’enregistrer.'}</p>
+    ${vignette || m.vignette ? `<img class="apercu-scan" style="width:76px;height:76px;margin-bottom:12px" src="${vignette || m.vignette}" alt="">` : ''}
+    <div class="champ"><label for="fNom">Nom du médicament</label><input id="fNom" value="${esc(v(pre.nom, m.nom))}" placeholder="Doliprane"></div>
+    <div class="grille-2">
+      <div class="champ"><label for="fDosage">Dosage</label><input id="fDosage" value="${esc(v(pre.dosage, m.dosage))}" placeholder="1000 mg"></div>
+      <div class="champ"><label for="fForme">Forme</label><select id="fForme">${FORMES.map(f => `<option ${((v(pre.forme, m.forme) || '').toLowerCase().includes(f.slice(0, 5)) ? 'selected' : '')}>${f}</option>`).join('')}</select></div>
+    </div>
+    <div class="grille-2">
+      <div class="champ"><label for="fDci">Substance active</label><input id="fDci" value="${esc(v(pre.dci, m.dci))}" placeholder="Paracétamol"></div>
+      <div class="champ"><label for="fLabo">Laboratoire</label><input id="fLabo" value="${esc(v(pre.laboratoire, m.laboratoire))}" placeholder="Sanofi"></div>
+    </div>
+    <div class="grille-2">
+      <div class="champ"><label for="fQte">Boîtes en stock</label><input id="fQte" type="number" min="0" inputmode="numeric" value="${esc(v(m.quantite, 1))}"></div>
+      <div class="champ"><label for="fPer">Date de péremption</label><input id="fPer" type="month" value="${esc(v(pre.peremption, m.peremption))}"></div>
+    </div>
+    <div class="champ"><label for="fNotes">Posologie, notes</label><textarea id="fNotes" placeholder="1 comprimé toutes les 6 h si douleur, max 3 g par jour">${esc(v(m.notes, ''))}</textarea></div>
+    <div class="rang-actions">
+      ${idExistant ? '<button class="btn danger" id="fSuppr">Supprimer</button>' : ''}
+      <button class="btn vert" id="fEnr">Enregistrer</button>
+    </div>`);
+  $('#fEnr').onclick = async () => {
+    const nom = $('#fNom').value.trim();
+    if (!nom) { toast('Le nom du médicament est obligatoire'); $('#fNom').focus(); return; }
+    const fiche = {
+      id: idExistant || nouvelId(),
+      nom, dosage: $('#fDosage').value.trim(), forme: $('#fForme').value,
+      dci: $('#fDci').value.trim(), laboratoire: $('#fLabo').value.trim(),
+      quantite: Math.max(0, Number($('#fQte').value) || 0),
+      peremption: $('#fPer').value || null,
+      notes: $('#fNotes').value.trim(),
+      vignette: vignette || m.vignette || null,
+      creeLe: m.creeLe || Date.now()
+    };
+    fermerFeuille();
+    await sauvMed(fiche);
+    toast(idExistant ? 'Médicament mis à jour' : nom + ' ajouté à la pharmacie');
+  };
+  if (idExistant) $('#fSuppr').onclick = async () => {
+    if (!confirm('Supprimer ' + (m.nom || 'ce médicament') + ' de la pharmacie ?')) return;
+    fermerFeuille();
+    await supprMed(idExistant);
+    toast('Médicament supprimé');
+  };
+}
+
+/* ---- Flux document ---- */
+let fichierDocTemp = null;
+async function fluxDocument(file) {
+  fichierDocTemp = file;
+  const estImage = file.type.startsWith('image/');
+  let vignette = null;
+  if (estImage) { try { vignette = await reduireImage(file, 200, 0.6); } catch (e) {} }
+  let pre = {};
+  if (estImage && LS.get('cleApi')) {
+    feuilleAnalyse(vignette, 'Lecture du document…');
+    fluxAbort = new AbortController();
+    const prompt = 'Tu analyses la photo d’un document médical français. ' +
+      'Classe-le dans UNE catégorie parmi : ordonnance, radio, vaccin, operation, analyse, compte_rendu, remboursement, autre. ' +
+      'Réponds UNIQUEMENT avec un objet JSON : {"categorie": "…", ' +
+      '"titre": "titre court et parlant, ex Radio du thorax — Dr Martin", ' +
+      '"date": "AAAA-MM-JJ si une date figure sur le document, sinon null", ' +
+      '"resume": "une phrase de résumé"}.';
+    try {
+      pre = await analyserImage(prompt, file, fluxAbort.signal) || {};
+      fluxAbort = null;
+    } catch (e) {
+      fluxAbort = null;
+      if (e && (e.code === 'cancelled' || e.name === 'AbortError')) return;
+      toast(e && e.code === 'bad_key' ? 'Clé API refusée — vérifiez-la dans le Profil' : 'Analyse indisponible — classez le document vous-même');
+    }
+  }
+  if (estImage && !LS.get('cleApi')) rappelCle();
+  formDocument(pre, vignette, file, null);
+}
+
+function formDocument(pre, vignette, file, idExistant) {
+  const d = idExistant ? etat.docs.find(x => x.id === idExistant) || {} : {};
+  const cat = CATS[pre.categorie] ? pre.categorie : (d.categorie || 'autre');
+  ouvrirFeuille(`
+    <h3>${idExistant ? 'Modifier le document' : 'Nouveau document'}</h3>
+    <p class="ss">${idExistant ? '' : 'Vérifiez le classement proposé avant d’enregistrer.'}</p>
+    ${vignette || d.vignette ? `<img class="apercu-scan" style="width:76px;height:76px;margin-bottom:12px" src="${vignette || d.vignette}" alt="">` : ''}
+    <div class="champ"><label for="dTitre">Titre</label><input id="dTitre" value="${esc(pre.titre ?? d.titre ?? '')}" placeholder="Radio du genou droit"></div>
+    <div class="grille-2">
+      <div class="champ"><label for="dCat">Catégorie</label><select id="dCat">${Object.entries(CATS).map(([k, c]) => `<option value="${k}" ${k === cat ? 'selected' : ''}>${c.nom}</option>`).join('')}</select></div>
+      <div class="champ"><label for="dDate">Date du document</label><input id="dDate" type="date" value="${esc(pre.date ?? d.date ?? '')}"></div>
+    </div>
+    <div class="champ"><label for="dNotes">Notes</label><textarea id="dNotes" placeholder="Contexte, médecin, résultat…">${esc(pre.resume ?? d.notes ?? '')}</textarea></div>
+    <div class="rang-actions"><button class="btn vert pleine" id="dEnr">Enregistrer</button></div>`);
+  $('#dEnr').onclick = async () => {
+    const titre = $('#dTitre').value.trim();
+    if (!titre) { toast('Donnez un titre au document'); $('#dTitre').focus(); return; }
+    const btn = $('#dEnr'); btn.disabled = true; btn.textContent = 'Enregistrement…';
+    const fiche = {
+      id: idExistant || nouvelId(),
+      titre, categorie: $('#dCat').value, date: $('#dDate').value || null,
+      notes: $('#dNotes').value.trim(),
+      vignette: vignette || d.vignette || null,
+      type: file ? file.type : d.type || null,
+      assetId: d.assetId || null, assetUrl: d.assetUrl || null, dataUrl: d.dataUrl || null,
+      creeLe: d.creeLe || Date.now()
+    };
+    if (file) {
+      const ok = await stockerFichierDoc(fiche, file);
+      if (!ok) { btn.disabled = false; btn.textContent = 'Enregistrer'; return; }
+    }
+    fermerFeuille();
+    fichierDocTemp = null;
+    await sauvDoc(fiche);
+    toast('Document classé dans ' + CATS[fiche.categorie].nom);
+  };
+}
+
+async function stockerFichierDoc(fiche, file) {
+  const estImage = file.type.startsWith('image/');
+  if (caps.assets) {
+    try {
+      let blob = file;
+      if (estImage && file.size > 6 * 1024 * 1024) blob = await reduireImageBlob(file, 2200, 0.85) || file;
+      const r = await caps.assets.upload(blob);
+      fiche.assetId = r.id; fiche.assetUrl = r.url; fiche.dataUrl = null;
+      return true;
+    } catch (e) { /* on tente le repli local */ }
+  }
+  if (estImage) {
+    const d = await imagePourStockageLocal(file).catch(() => null);
+    if (d) { fiche.dataUrl = d; return true; }
+    toast('Image trop lourde pour le stockage local'); return false;
+  }
+  if (file.size <= 1.5 * 1024 * 1024) {
+    const d = await new Promise(res => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => res(null); r.readAsDataURL(file); });
+    if (d) { fiche.dataUrl = d; return true; }
+  }
+  toast('PDF trop lourd (1,5 Mo maximum) — photographiez le document à la place');
+  return false;
+}
+
+/* =================== Visionneuse =================== */
+let docOuvert = null;
+function ouvrirVisio(id) {
+  const d = etat.docs.find(x => x.id === id);
+  if (!d) return;
+  docOuvert = id;
+  $('#visioTitre').textContent = d.titre;
+  const src = d.assetUrl || d.dataUrl;
+  let media = '';
+  if (src && d.type === 'application/pdf') {
+    media = `<div class="visio-pdf"><p style="margin-bottom:12px">Document PDF</p><a href="${src}" target="_blank" rel="noopener">Ouvrir le PDF</a></div>`;
+  } else if (src) {
+    media = `<img src="${src}" alt="${esc(d.titre)}">`;
+  } else {
+    media = `<div class="visio-pdf"><p>Aperçu indisponible sur cet appareil.</p></div>`;
+  }
+  $('#visioCorps').innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;gap:16px;max-width:100%">
+    ${media}
+    <div style="display:flex;gap:10px">
+      <button class="btn ligne petit" id="visioEdit">${ICO.crayon} Modifier</button>
+      <button class="btn danger petit" id="visioSuppr">${ICO.poubelle} Supprimer</button>
+    </div>
+    <div style="color:#B9CBBE;font-size:12.5px;font-weight:600;text-align:center">
+      ${CATS[d.categorie]?.nom || ''}${d.date ? ' · ' + fmtDate(d.date) : ''}${d.notes ? '<br>' + esc(d.notes) : ''}
+    </div></div>`;
+  $('#visio').classList.add('ouvert');
+  document.body.style.overflow = 'hidden';
+  $('#visioEdit').onclick = () => { fermerVisio(); formDocument({}, null, null, id); };
+  $('#visioSuppr').onclick = async () => {
+    if (!confirm('Supprimer « ' + d.titre + ' » ?')) return;
+    fermerVisio();
+    await supprDoc(id);
+    toast('Document supprimé');
+  };
+}
+function fermerVisio() {
+  $('#visio').classList.remove('ouvert');
+  $('#visioCorps').innerHTML = '';
+  document.body.style.overflow = '';
+  docOuvert = null;
+}
+$('#visioFermer').onclick = fermerVisio;
+
+/* =================== Profil =================== */
+const GROUPES = ['Inconnu', 'O+', 'O−', 'A+', 'A−', 'B+', 'B−', 'AB+', 'AB−'];
+function formProfil() {
+  const p = etat.profil || {};
+  const v = k => esc(p[k] ?? '');
+  ouvrirFeuille(`
+    <h3>Mon profil santé</h3>
+    <p class="ss">Tous les champs sont facultatifs. Ces informations restent dans votre espace privé.</p>
+    <div class="grille-2">
+      <div class="champ"><label for="pPrenom">Prénom</label><input id="pPrenom" value="${v('prenom')}"></div>
+      <div class="champ"><label for="pNom">Nom</label><input id="pNom" value="${v('nom')}"></div>
+    </div>
+    <div class="grille-2">
+      <div class="champ"><label for="pNaiss">Date de naissance</label><input id="pNaiss" type="date" value="${v('naissance')}"></div>
+      <div class="champ"><label for="pSexe">Sexe</label><select id="pSexe">${['', 'Femme', 'Homme', 'Autre'].map(s => `<option ${p.sexe === s ? 'selected' : ''}>${s}</option>`).join('')}</select></div>
+    </div>
+    <div class="champ"><label for="pNir">N° de sécurité sociale (facultatif)</label><input id="pNir" inputmode="numeric" value="${v('nir')}" placeholder="2 88 05 75 …"></div>
+    <div class="champ"><label for="pMut">Mutuelle</label><input id="pMut" value="${v('mutuelle')}"></div>
+    <div class="grille-2">
+      <div class="champ"><label for="pGrp">Groupe sanguin</label><select id="pGrp">${GROUPES.map(g => `<option ${p.groupeSanguin === g ? 'selected' : ''}>${g}</option>`).join('')}</select></div>
+      <div class="champ"><label for="pTaille">Taille (cm)</label><input id="pTaille" type="number" inputmode="numeric" value="${v('taille')}"></div>
+    </div>
+    <div class="champ"><label for="pPoids">Poids (kg)</label><input id="pPoids" type="number" inputmode="decimal" value="${v('poids')}"></div>
+    <div class="champ"><label for="pAll">Allergies</label><textarea id="pAll" placeholder="Pénicilline, arachide…">${v('allergies')}</textarea></div>
+    <div class="champ"><label for="pTrait">Traitements en cours</label><textarea id="pTrait">${v('traitements')}</textarea></div>
+    <div class="champ"><label for="pAnt">Antécédents médicaux</label><textarea id="pAnt">${v('antecedents')}</textarea></div>
+    <div class="grille-2">
+      <div class="champ"><label for="pMed">Médecin traitant</label><input id="pMed" value="${v('medecin')}"></div>
+      <div class="champ"><label for="pMedTel">Tél. du médecin</label><input id="pMedTel" type="tel" value="${v('medecinTel')}"></div>
+    </div>
+    <div class="grille-2">
+      <div class="champ"><label for="pUrgNom">Contact d'urgence</label><input id="pUrgNom" value="${v('urgenceNom')}"></div>
+      <div class="champ"><label for="pUrgTel">Tél. d'urgence</label><input id="pUrgTel" type="tel" value="${v('urgenceTel')}"></div>
+    </div>
+    <div class="rang-actions"><button class="btn vert pleine" id="pEnr">Enregistrer</button></div>`);
+  $('#pEnr').onclick = async () => {
+    const g = id => $(id).value.trim();
+    fermerFeuille();
+    await sauvProfil({
+      prenom: g('#pPrenom'), nom: g('#pNom'), naissance: $('#pNaiss').value || null,
+      sexe: $('#pSexe').value, nir: g('#pNir'), mutuelle: g('#pMut'),
+      groupeSanguin: $('#pGrp').value, taille: g('#pTaille'), poids: g('#pPoids'),
+      allergies: g('#pAll'), traitements: g('#pTrait'), antecedents: g('#pAnt'),
+      medecin: g('#pMed'), medecinTel: g('#pMedTel'),
+      urgenceNom: g('#pUrgNom'), urgenceTel: g('#pUrgTel'),
+      majLe: Date.now()
+    });
+    toast('Profil enregistré');
+  };
+}
+
+async function exporterDonnees() {
+  const donnees = {
+    application: 'Mon Carnet de Santé', version: 'autonome', exporte_le: new Date().toISOString(),
+    profil: etat.profil, medicaments: etat.meds, documents: etat.docs
+  };
+  const blob = new Blob([JSON.stringify(donnees, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'mon-carnet-de-sante-sauvegarde.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+  toast('Sauvegarde téléchargée — gardez-la précieusement');
+}
+function importerDonnees(f) {
+  f.text().then(t => {
+    const d = JSON.parse(t);
+    if (!d || (!Array.isArray(d.medicaments) && !Array.isArray(d.documents) && !d.profil)) throw new Error('format');
+    const im = new Set(etat.meds.map(m => m.id));
+    (d.medicaments || []).forEach(m => { if (m && m.id && !im.has(m.id)) etat.meds.push(m); });
+    const idd = new Set(etat.docs.map(x => x.id));
+    (d.documents || []).forEach(x => { if (x && x.id && !idd.has(x.id)) etat.docs.push(x); });
+    if (d.profil && !etat.profil) etat.profil = d.profil;
+    LS.set('meds', etat.meds); LS.set('docs', etat.docs); if (etat.profil) LS.set('profil', etat.profil);
+    rendreTout();
+    toast('Import terminé : ' + etat.meds.length + ' médicaments, ' + etat.docs.length + ' documents');
+  }).catch(() => toast('Fichier non reconnu — utilisez un export de l’application'));
+}
+
+/* =================== Événements globaux =================== */
+document.addEventListener('click', e => {
+  const nav = e.target.closest('[data-nav]');
+  if (nav) {
+    if (nav.dataset.filtre) { filtreMed = nav.dataset.filtre; rendreMeds(); }
+    else if (nav.dataset.nav === 'pharmacie' && filtreMed !== 'tous') { filtreMed = 'tous'; rendreMeds(); }
+    naviguer(nav.dataset.nav);
+    return;
+  }
+  const fm = e.target.closest('[data-fmed]');
+  if (fm) { filtreMed = fm.dataset.fmed; rendreMeds(); return; }
+  const fd = e.target.closest('[data-fdoc]');
+  if (fd) { filtreDoc = fd.dataset.fdoc; rendreDocs(); return; }
+  const q = e.target.closest('[data-qte]');
+  if (q) {
+    const m = etat.meds.find(x => x.id === q.dataset.id);
+    if (m) {
+      m.quantite = Math.max(0, (Number(m.quantite) || 0) + Number(q.dataset.qte));
+      q.parentElement.querySelector('b').textContent = m.quantite;
+      sauvMedDiffere(m);
+      rendreAccueil();
+    }
+    return;
+  }
+  const fiMed = e.target.closest('[data-med]');
+  if (fiMed) { formMedicament({}, null, fiMed.dataset.med); return; }
+  const fiDoc = e.target.closest('[data-doc]');
+  if (fiDoc) { ouvrirVisio(fiDoc.dataset.doc); return; }
+  if (e.target.closest('#videAjoutMed')) { feuilleSource('med'); return; }
+  if (e.target.closest('#videAjoutDoc')) { feuilleSource('doc'); return; }
+  if (e.target.closest('#btnCreerProfil') || e.target.closest('#btnEditerProfil')) { formProfil(); return; }
+  if (e.target.closest('#btnExporter')) { exporterDonnees(); return; }
+  if (e.target.closest('#btnImporter')) { $('#ficImport').click(); return; }
+  if (e.target.closest('#btnCle')) { const v = $('#cleApi').value.trim(); LS.set('cleApi', v); toast(v ? 'Clé enregistrée sur cet appareil' : 'Clé effacée'); rendreProfil(); return; }
+  if (e.target.closest('#carteVitale')) { naviguer('profil'); if (!etat.profil) formProfil(); return; }
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.closest) {
+    const rb = e.target.closest('[role="button"]');
+    if (rb) { e.preventDefault(); rb.click(); }
+  }
+});
+$('#btnScan').onclick = feuilleScan;
+$('#btnAjoutMed').onclick = () => feuilleSource('med');
+$('#btnAjoutDoc').onclick = () => feuilleSource('doc');
+$('#btnFC').onclick = () => toast('La connexion FranceConnect / Ameli arrivera dans une prochaine version.');
+$('#rechMed').addEventListener('input', rendreMeds);
+$('#rechDoc').addEventListener('input', rendreDocs);
+
+function brancheFichier(id, fn) {
+  const inp = $(id);
+  inp.addEventListener('change', () => {
+    const f = inp.files && inp.files[0];
+    inp.value = '';
+    if (f) fn(f);
+  });
+}
+brancheFichier('#ficPhotoMed', fluxMedicament);
+brancheFichier('#ficGalerieMed', fluxMedicament);
+brancheFichier('#ficPhotoDoc', fluxDocument);
+brancheFichier('#ficFichierDoc', fluxDocument);
+brancheFichier('#ficImport', importerDonnees);
+
+/* =================== Démarrage =================== */
+(async function boot() {
+  etat.meds = LS.get('meds') || [];
+  etat.docs = LS.get('docs') || [];
+  etat.profil = LS.get('profil');
+  rendreAmeli();
+  rendreTout();
+
+})();
+</script>
+</body>
+</html>
